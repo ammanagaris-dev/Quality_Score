@@ -1,0 +1,19 @@
+# requirements.txt
+# Install everything in one go:
+#   pip install -r requirements.txt
+
+opencv-python==4.9.0.80   # blur, contrast, noise, resolution, deskew
+numpy==1.26.4             # array math used throughout
+Pillow==10.3.0            # reading DPI metadata from images
+pdf2image==1.17.0         # converts PDF first page to image for processing
+
+gspread==6.1.2            # Google Sheets API wrapper
+google-auth==2.29.0       # reads the service_account.json credentials
+google-auth-oauthlib==1.2.0
+
+# pdf2image requires the Poppler binary separately — Python alone is not enough.
+# Install Poppler for your OS:
+#   Windows : https://github.com/oschwartz10612/poppler-windows/releases
+#             → extract zip → add the bin\ folder to your system PATH
+#   Mac     : brew install poppler
+#   Ubuntu  : sudo apt install poppler-utils

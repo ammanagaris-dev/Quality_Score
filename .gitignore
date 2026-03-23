@@ -1,0 +1,32 @@
+# ── CREDENTIALS ──────────────────────────────────────
+service_account.json
+*.json.bak
+.env
+
+# ── PYTHON CACHE ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── VIRTUAL ENVIRONMENTS ───────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── TEST / SAMPLE DOCUMENTS ────────────────────────────────────────────────
+# Remove these 4 lines if you WANT to commit sample docs to the repo
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+
+# ── VSCode ─────────────────────────────────────────────────────────────────
+.vscode/
+
+# ── OS junk ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
